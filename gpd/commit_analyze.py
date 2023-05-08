@@ -686,12 +686,6 @@ def extract_commit_monthly_state(path):
     new_df = pd.DataFrame(to_save_timezone, columns=['month', 'timezone', 'feature', 'fix', 'other', 'add', 'remove', 'total'])
     new_df.to_csv(monthly_timezone_state_path)
     
-"""
-for each month, extract newcomers and their add/remove lines in commit, feature/fix/other/total amount
-based on data generated from function extract_commit_monthly_state
-"""
-def extract_commit_monthly_newcomer(path):
-    pass
         
 if __name__ == "__main__":
     #commit_vector("C:\\Users\\Pit\\Downloads\\毕业相关\\dataset\\Java\\error-prone", limit=10)
